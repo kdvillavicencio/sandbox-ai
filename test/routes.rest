@@ -1,0 +1,27 @@
+GET http://localhost:8000/
+content-type: application/json
+
+{
+    "name": "sample",
+    "time": "Wed, 21 Oct 2015 18:27:50 GMT"
+}
+
+###
+
+GET http://localhost:8000/items/99
+content-type: application/json
+
+{
+    "name": "sample",
+    "time": "Wed, 21 Oct 2015 18:27:50 GMT"
+}
+
+###
+
+POST http://localhost:8000/ask
+content-type: application/json
+
+{
+    "question": "How many cats?",
+    "img_url": "http://images.cocodataset.org/val2017/000000039769.jpg"
+}
